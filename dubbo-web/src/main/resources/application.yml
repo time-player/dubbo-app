@@ -1,0 +1,15 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: dubbo-web
+
+dubbo:
+  application:
+    name: dubbo-web
+    #registry: zookeeper://47.104.241.41:2181
+  consumer:
+    registry: zookeeper://47.104.241.41:2181
+
+
