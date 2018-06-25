@@ -8,9 +8,9 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 public interface UserMapper {
 
-    @Insert("insert into org_user(id,userid,userName,created) values(#{id},#{userId},#{userName},#{created})")
+    @Insert("insert into org_user(id,userid,user_Name,created) values(#{id},#{userId},#{userName},#{created})")
     public int insert(User user);
 
-    @Select("select id,userId,userName,created from org_user where userId=#{userId} ")
+    @Select("select id,userId,user_name userName,created from org_user where userId=#{userId} ")
     public User getUserById(String userId);
 }
